@@ -1,3 +1,5 @@
+import './style.css'
+
 // random circle generator
 // taken from MDN - https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Looping_code#why_bother
 const btn = document.getElementById('newCanvas');
