@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>random circles - vite</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div id="randomCirclesApp"></div>
-    <script src="./randomCirclesModule.js" type='module'></script>
-    <script src="./randomCircles.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>random circles - vite</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <div class="container flex">
+      <div class="nav">
+        <h1>random circles</h1>
+        <button id='newCanvas'>new canvas</button>
+        <button id='themeSwitchButton' class='themeSwitch' onclick='switchTheme()'>
+          <img src="https://joshkoter.com/wp-content/uploads/2021/09/themeSwitch.png" alt="switch theme"
+            title='switch theme'>
+        </button>
+      </div>
+      <a href='https://youtu.be/dQw4w9WgXcQ' title="don't click">
+        <canvas></canvas>
+      </a>
+    </div>
+  </main>
+  <script src="./randomCirclesModule.js" type='module'></script>
+  <script src="./randomCircles.js"></script>
+</body>
+
 </html>
