@@ -5,8 +5,6 @@ import './style.css'
 const btn = document.getElementById('newCanvas');
 const canvas = document.querySelector('canvas');
 const ctx = canvas.getContext('2d');
-// let WIDTH = document.documentElement.clientWidth;
-// let HEIGHT = document.documentElement.clientHeight;
 let WIDTH = 800;
 let HEIGHT = 800;
 canvas.width = WIDTH;
@@ -26,7 +24,4 @@ function draw() {
 btn.addEventListener('click',draw);
 
 // theme switcher
-function switchTheme() {
-    var element = document.body;
-    element.classList.toggle('dark-mode');
-}
+const switchTheme = () => { var element = document.body; element.classList.toggle('dark-mode')};
